@@ -11,8 +11,6 @@ from matplotlib.patches import Ellipse
 
 ```py
 data = gpd.read_file(r'../training_lm.gdb',driver="OpenFileGDB",layer="mtit_LM15GH_jaw")
-data = data.explode()
-data.index= [inx[0] for inx in data.index]
 ```
 
 ```py
