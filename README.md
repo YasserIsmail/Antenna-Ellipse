@@ -4,6 +4,10 @@ Before start look at The image below that contain a diagram to a pair antenna th
 
 ![ellipse](Images/ellipse.png "ellipse")
 
+The best shape to ellipse antenna's covered area is a ellipse 'that is clear from his name' so I would to show axes to ellipse, there are two axes Major-axis and Minor-axis as the below image.
+
+![ellipse2](Images/ellips2e.png "ellipse2")
+
 ```py
 import os
 import geopandas as gpd
