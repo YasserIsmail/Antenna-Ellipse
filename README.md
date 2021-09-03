@@ -11,6 +11,7 @@ from matplotlib.patches import Ellipse
 ```py
 data = gpd.read_file(r'../training_lm.gdb',driver="OpenFileGDB",layer="mtit_LM15GH_jaw")
 ```
+![lines](Images/lines.jpg "lines")
 
 ```py
 def azimuthAngle(x1,y1,x2,y2):
