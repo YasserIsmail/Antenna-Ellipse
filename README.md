@@ -1,5 +1,4 @@
 # create ellipse from line that link between two antenna to find  area covered that has best signal from antenna.
-### Overview
 To know area covered by ellipse antenna I did my analysis that which I am about to explain to you.
 look at The image below that contain a diagram to a pair antenna that  show how to the antenna does cover to the areas.
 
