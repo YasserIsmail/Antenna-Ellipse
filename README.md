@@ -87,4 +87,6 @@ if os.path.isdir('output'):
 os.mkdir('output')
 data.to_file(r'output\output.shp')
 ```
-![ellipse3.jpg](Images/ellipse3.jpg "ellipse3")
+![ellipse3](Images/ellipse3.jpg "ellipse3")
+
+![test](Images/test.jpg "test")
