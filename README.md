@@ -1,12 +1,21 @@
-# Antenna-Ellipse
+# create the areas covered by antenna ellipse
+### Overview
 To know area covered by ellipse antenna I did my analysis that which I am about to explain to you.
-Before start look at The image below that contain a diagram to a pair antenna that  show how to the antenna does cover to the areas.
+look at The image below that contain a diagram to a pair antenna that  show how to the antenna does cover to the areas.
 
 ![ellipse](Images/ellipse.png "ellipse")
 
 The best shape to ellipse antenna's covered area is a ellipse 'that is clear from his name' so I would to show axes to ellipse, there are two axes Major-axis and Minor-axis as the below image.
 
-![ellipse2](Images/ellips2e.png "ellipse2")
+![ellipse2](Images/ellipse2.png "ellipse2")
+
+The lines exsist at in bellow image are links between each a pair of antenna, in the same time each a line is a major axis to ellipse that going to create by the code.
+
+![lines](Images/lines.jpg "lines")
+
+the code workflow is calculate the semi-minor axis length that does create from multiplying tangent of angle with semi-major axis length  then multiplying that with two to calculate minor axis.
+
+![workflow](Images/workflow.png "workflow")
 
 ```py
 import os
@@ -20,7 +29,7 @@ from matplotlib.patches import Ellipse
 ```py
 data = gpd.read_file(r'../training_lm.gdb',driver="OpenFileGDB",layer="mtit_LM15GH_jaw")
 ```
-![lines](Images/lines.jpg "lines")
+
 
 ```py
 def azimuthAngle(x1,y1,x2,y2):
