@@ -1,4 +1,9 @@
 # Antenna-Ellipse
+To know area covered by ellipse antenna I did my analysis that which I am about to explain to you.
+Before start look at The image below that contain a diagram to a pair antenna that  show how to the antenna does cover to the areas.
+
+![ellipse](Images/ellipse.png "ellipse")
+
 ```py
 import os
 import geopandas as gpd
