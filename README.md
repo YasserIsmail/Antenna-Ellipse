@@ -28,8 +28,6 @@ to calculate the semi-minor axis length by multiplying tangent of angle with sem
 
 the angle will calculate by ***azimuthAngle(x1,y1,x2,y2)*** that calculate Azimuth angle between center of line 'xy parameter' and the last vertex in the line
 # 
-### Code
-
 ```py
 import os
 import geopandas as gpd
@@ -38,7 +36,7 @@ import shutil
 from shapely.geometry import Polygon
 from matplotlib.patches import Ellipse
 ```
-**Read Data From Esri Geodatabase**
+**read data from Esri Geodatabase**
 ```py
 data = gpd.read_file(r'MyProject.gdb',driver="OpenFileGDB",layer="Antenna")
 ```
@@ -64,7 +62,7 @@ def azimuthAngle(x1,y1,x2,y2):
     angle = 3.0 * math.pi / 2.0 + math.atan(dy / -dx)
   return (angle * 180 / math.pi)
 ```
-**find semi-major axis length**
+**find semi-minor axis length**
 ```py
 semi_minor = lambda length,degree : (length/2)*math.tan(math.radians(degree))
 ```
@@ -81,6 +79,8 @@ def create_ellipse(gdf,degree):
 ```py
 data['geometry'] = create_ellipse(data,5)
 ```
+
+**create Esri Shapefile contains ellipse**
 ```py
 if os.path.isdir('output'):
     shutil.rmtree('output',ignore_errors=True)
